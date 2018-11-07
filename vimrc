@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+map <C-a> :NERDTreeToggle<CR>
+
 set nocompatible
 syntax on 
 filetype plugin indent on
