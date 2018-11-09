@@ -15,3 +15,4 @@ set shiftwidth=4
 set expandtab 
 set cursorline 
 set t_Co=256 
+autocmd FileType typescript setlocal completeopt-=menu
