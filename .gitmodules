@@ -13,3 +13,9 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = git@github.com:dracula/vim.git
+[submodule "bundle/typescript-vim"]
+    path = bundle/typescript-vim
+    url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-gitgutter"]
+    path = bundle/vim-gitgutter
+    url = https://github.com/airblade/vim-gitgutter.git
