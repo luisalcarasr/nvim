@@ -6,19 +6,19 @@
 	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-blade"]
 	path = bundle/vim-blade
-	url = git://github.com/jwalton512/vim-blade.git
+	url = https://github.com/jwalton512/vim-blade.git
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
-	url = git://github.com/jiangmiao/auto-pairs.git
+	url = https://github.com/jiangmiao/auto-pairs.git
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
-	url = git@github.com:dracula/vim.git
+	url = https://github.com/dracula/vim.git
 [submodule "bundle/typescript-vim"]
     path = bundle/typescript-vim
     url = https://github.com/leafgarland/typescript-vim.git
 [submodule "bundle/vim-gitgutter"]
-    path = bundle/vim-gitgutter
+   	path = bundle/vim-gitgutter
     url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-prettier"]
 	path = bundle/vim-prettier
-	url = git@github.com:prettier/vim-prettier.git
+	url = https://github.com/prettier/vim-prettier.git
