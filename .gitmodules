@@ -25,3 +25,6 @@
 [submodule "bundle/onedark.vim"]
 	path = bundle/onedark.vim
 	url = https://github.com/joshdick/onedark.vim
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = https://github.com/posva/vim-vue
