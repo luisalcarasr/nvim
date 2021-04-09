@@ -25,9 +25,9 @@ set cursorline
 set encoding=utf-8
 set showmatch
 set relativenumber
-so ~/AppData/Local/nvim/plugins.vim
-so ~/AppData/Local/nvim/maps.vim
-so ~/AppData/Local/nvim/plugin-config.vim
+so ~/.vim/plugins.vim
+so ~/.vim/maps.vim
+so ~/.vim/plugin-config.vim
 
 "colorscheme gruvbox
 colorscheme onedark
