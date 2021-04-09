@@ -1,2 +1,2 @@
-# vimrc
-🖋 My vim configuration
+# NeoVim Configuration
+🖋 My nvim configuration
