@@ -25,6 +25,7 @@ set cursorline
 set encoding=utf-8
 set showmatch
 set relativenumber
+set noerrorbells visualbell
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/plugin-config.vim
@@ -48,5 +49,14 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+" Git
+let blamer_enabled=1
+let blamer_delay=200
+
+" NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_int") | NERDTreeToggle | endif
 map <C-a> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
+let NERDTreeWinSize=50
+

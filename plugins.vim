@@ -48,6 +48,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-repeat'
+Plug 'APZelos/blamer.nvim'
 
 " colorschemas
 Plug 'https://github.com/joshdick/onedark.vim.git'
