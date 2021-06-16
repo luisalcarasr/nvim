@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " syntax
+Plug 'gko/vim-coloresque'
 Plug 'sheerun/vim-polyglot'
 "Plug 'HerringtonDarkholme/yats.vim'
 "Plug 'yuezk/vim-js'

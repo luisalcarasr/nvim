@@ -60,3 +60,5 @@ map <C-a> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeWinSize=50
 
+" CoC
+let g:coc_disable_startup_warning = 1
