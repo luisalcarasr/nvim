@@ -18,7 +18,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'onedark',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -87,7 +87,7 @@ set diffopt+=vertical
 " Highlight symbol under cursor on CursorHold
 
 
-let $FZF_DEFAULT_OPTS='--layout=reverse'
+let $FZF_DEFAULT_OPTS="--layout=reverse --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
 "let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 "function! FloatingFZF()
   "let buf = nvim_create_buf(v:false, v:true)

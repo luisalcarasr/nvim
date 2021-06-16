@@ -1,21 +1,14 @@
 call plug#begin('~/.vim/plugged')
 
 " syntax
-Plug 'gko/vim-coloresque'
+Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
-"Plug 'HerringtonDarkholme/yats.vim'
-"Plug 'yuezk/vim-js'
-"Plug 'flowtype/vim-flow'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
-" Themes
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
-
-" Tree
+" tree
 Plug 'scrooloose/nerdtree'
 
 " typing
@@ -53,4 +46,6 @@ Plug 'APZelos/blamer.nvim'
 
 " colorschemas
 Plug 'https://github.com/joshdick/onedark.vim.git'
+Plug 'NovaDev94/lightline-onedark'
+
 call plug#end()
