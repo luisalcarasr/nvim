@@ -1,4 +1,3 @@
-
 set nocompatible
 syntax on 
 filetype plugin indent on
@@ -26,6 +25,7 @@ set encoding=utf-8
 set showmatch
 set relativenumber
 set noerrorbells visualbell
+so ~/.vim/autoload/plug.vim " For gVim on Windows 11
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/plugin-config.vim
@@ -34,6 +34,7 @@ colorscheme onedark
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
+set guifont=Cascadia\ Code:h14
 
 " Searching
 set hlsearch
@@ -54,3 +55,4 @@ let NERDTreeWinSize=50
 
 " CoC
 let g:coc_disable_startup_warning = 1
+
