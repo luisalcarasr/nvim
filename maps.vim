@@ -14,6 +14,9 @@ nnoremap <Leader>; $a;<Esc>
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>qa :qa<CR>
+nnoremap <Leader>x :x<CR>
+nnoremap <Leader>\ :source ~/.config/nvim/init.vim<CR>
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame
@@ -23,6 +26,7 @@ cnoreabbrev diff Gdiff
 " plugs
 map <Leader>nt :NERDTreeFind<CR>
 map <Leader>p :Files<CR>
+map <Leader>rg :Rg<CR>
 map <Leader>ag :Ag<CR>
 
 " Use <c-space> to trigger completion.
@@ -56,7 +60,7 @@ nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
 " run current file
-nnoremap <Leader>x :!node %<cr>
+" nnoremap <Leader>x :!node %<cr>
 
 " Use <c-space> to trigger completion.
 if &filetype == "javascript" || &filetype == "python"
@@ -82,7 +86,7 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "vsp term://bash"
+    execute "vsp term://zsh"
 
     " turn off numbers
     execute "set nonu"
