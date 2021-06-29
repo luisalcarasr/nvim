@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Syntax
 Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
+Plug 'wavded/vim-stylus'
 
 " Status Bar
 Plug 'maximbaz/lightline-ale'
@@ -34,6 +35,10 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+
+" Sessions
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 
 " Git
 Plug 'tpope/vim-fugitive'
