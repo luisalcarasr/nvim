@@ -25,10 +25,10 @@ set encoding=utf-8
 set showmatch
 set relativenumber
 set noerrorbells visualbell
-so ~/.vim/autoload/plug.vim " For gVim on Windows 11
-so ~/.vim/plugins.vim
-so ~/.vim/maps.vim
-so ~/.vim/plugin-config.vim
+so ~/.config/nvim/autoload/plug.vim " For gVim on Windows 11
+so ~/.config/nvim/plugins.vim
+so ~/.config/nvim/shortcuts.vim
+so ~/.config/nvim/plugin-config.vim
 
 colorscheme onedark
 highlight Normal ctermbg=NONE

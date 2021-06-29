@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugins')
 
 " Syntax
 Plug 'ap/vim-css-color'
