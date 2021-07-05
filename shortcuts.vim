@@ -51,14 +51,21 @@ map <Leader>ob :Buffers<cr>
 
 
 " faster scrolling
-nnoremap <silent> <C-e> 10<C-e>
-nnoremap <silent> <C-y> 10<C-y>
+nnoremap <silent> <C-j> 10<C-e>
+nnoremap <silent> <C-k> 10<C-y>
 nmap <Leader>s <Plug>(easymotion-s2)
 
 " git
 nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
+
+" emmet
+let g:user_emmet_leader_key='<C-x>'
+
+" Find
+nnoremap <silent><leader>ff :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <silent><leader>ft :Rg "<C-R>=expand("<cword>")<CR>":<CR>
 
 " run current file
 " nnoremap <Leader>x :!node %<cr>

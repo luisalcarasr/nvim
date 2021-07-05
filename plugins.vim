@@ -35,6 +35,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'adelarsq/vim-matchit'
+Plug 'AndrewRadev/tagalong.vim'
+Plug 'mattn/emmet-vim'
 
 " Sessions
 Plug 'xolox/vim-misc'

@@ -25,6 +25,15 @@ let g:lightline = {
       \ }
       \}
 
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'tsx' : 1,
+    \ 'jsx' : 1,
+    \}
+
 "  nerdtree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
