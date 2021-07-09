@@ -3,11 +3,11 @@ let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 " Lightlane
 let g:lightline = {
       \ 'active': {
-      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \   'left': [['mode', 'paste'], [], ['filename', 'modified']],
+      \   'right': [['status'], ['filetype', 'percent', 'lineinfo', 'coc_info', 'coc_hints', 'coc_errors', 'coc_warnings', 'coc_ok'], ['gitbranch']]
       \ },
       \ 'inactive': {
-      \   'left': [['inactive'], ['relativepath']],
+      \   'left': [['inactive'], ['filename']],
       \   'right': [['bufnum']]
       \ },
       \ 'component': {
@@ -16,14 +16,17 @@ let g:lightline = {
       \ },
       \ 'component_function': {
       \   'gitbranch': 'fugitive#head',
-      \   'kitestatus': 'kite#statusline'
+      \   'kitestatus': 'kite#statusline',
+      \   'status': 'coc_errors'
       \ },
-      \ 'colorscheme': 'onedark',
+      \ 'colorscheme': 'gruvbox',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
       \ }
       \}
+
+call lightline#coc#register()
 
 let g:mta_filetypes = {
     \ 'html' : 1,

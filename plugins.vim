@@ -8,6 +8,7 @@ Plug 'wavded/vim-stylus'
 " Status Bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'josa42/vim-lightline-coc'
 
 " Explorer
 Plug 'scrooloose/nerdtree'
@@ -39,6 +40,12 @@ Plug 'adelarsq/vim-matchit'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'mattn/emmet-vim'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
+" HTTP Client
+Plug 'nicwest/vim-http'
+
 " Sessions
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
@@ -50,7 +57,7 @@ Plug 'tpope/vim-repeat'
 Plug 'APZelos/blamer.nvim'
 
 " Themes
-Plug 'https://github.com/joshdick/onedark.vim.git'
-Plug 'NovaDev94/lightline-onedark'
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 call plug#end()

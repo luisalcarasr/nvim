@@ -30,11 +30,11 @@ so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/shortcuts.vim
 so ~/.config/nvim/plugin-config.vim
 
-colorscheme onedark
+colorscheme gruvbox
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
-set guifont=Cascadia\ Code:h14
+set guifont=IBM\ Plex\ Mono:h14
 
 " Searching
 set hlsearch
