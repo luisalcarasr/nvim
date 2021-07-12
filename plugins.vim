@@ -20,7 +20,6 @@ Plug 'tpope/vim-surround'
 Plug 'kamykn/spelunker.vim'
 
 " Autocomplete
-Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Test
@@ -33,7 +32,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
-Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'adelarsq/vim-matchit'
@@ -55,6 +53,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-repeat'
 Plug 'APZelos/blamer.nvim'
+Plug 'mhinz/vim-signify'
 
 " Themes
 Plug 'morhetz/gruvbox'
