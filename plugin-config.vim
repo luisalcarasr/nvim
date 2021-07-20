@@ -19,7 +19,7 @@ let g:lightline = {
       \   'kitestatus': 'kite#statusline',
       \   'status': 'coc_errors'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'onedark',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''

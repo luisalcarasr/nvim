@@ -30,7 +30,7 @@ so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/shortcuts.vim
 so ~/.config/nvim/plugin-config.vim
 
-colorscheme gruvbox
+colorscheme onedark
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode

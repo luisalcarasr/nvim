@@ -56,7 +56,7 @@ Plug 'APZelos/blamer.nvim'
 Plug 'mhinz/vim-signify'
 
 " Themes
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'NovaDev94/lightline-onedark'
 
 call plug#end()
