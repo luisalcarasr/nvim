@@ -97,3 +97,8 @@ let $FZF_DEFAULT_OPTS="--layout=reverse --preview 'bat --color=always --style=he
 " Spell
 let g:enable_spelunker_vim = 0
 let g:spelunker_max_hi_words_each_buf = 2048
+
+" Markdown
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
