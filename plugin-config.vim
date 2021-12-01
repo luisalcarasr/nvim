@@ -102,3 +102,15 @@ let g:spelunker_max_hi_words_each_buf = 2048
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
 
+" Git
+let blamer_enabled=1
+let blamer_delay=200
+
+" NERDTree
+map <C-a> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
+let NERDTreeWinSize=50
+
+" CoC
+let g:coc_disable_startup_warning = 1
+
