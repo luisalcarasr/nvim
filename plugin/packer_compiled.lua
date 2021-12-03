@@ -233,6 +233,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/luis/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vimux-jest-test"] = {
+    loaded = true,
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/vimux-jest-test",
+    url = "https://github.com/tyewang/vimux-jest-test"
   }
 }
 

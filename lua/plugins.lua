@@ -19,9 +19,10 @@ return require('packer').startup(function(use)
   use 'wavded/vim-stylus'
 
   -- Status Bar
-  use 'maximbaz/lightline-ale'
-  use 'itchyny/lightline.vim'
-  use 'josa42/vim-lightline-coc'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
 
   -- Explorer
   use 'scrooloose/nerdtree'
@@ -33,7 +34,7 @@ return require('packer').startup(function(use)
   use 'kamykn/spelunker.vim'
 
   -- Autocomplete
-  use 'neoclide/coc.nvim'-- , {'branch': 'release'}
+  use {'neoclide/coc.nvim', branch='release'}
 
   -- Test
   use 'tyewang/vimux-jest-test'
@@ -70,6 +71,5 @@ return require('packer').startup(function(use)
 
   -- Themes
   use 'joshdick/onedark.vim'
-  use 'NovaDev94/lightline-onedark'
 
 end)
