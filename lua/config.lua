@@ -56,9 +56,9 @@ vim.g.NERDTreeWinSize=50
 vim.g.javascript_plugin_flow = 1
 
 -- coc
--- autocmd FileType python vim.g.b:coc_suggest_disable = 1
--- autocmd FileType javascript vim.g.b:coc_suggest_disable = 1
--- autocmd FileType scss setl iskeyword+=@-@
+vim.cmd 'autocmd FileType python vim.g.b:coc_suggest_disable = 1'
+vim.cmd 'autocmd FileType javascript vim.g.b:coc_suggest_disable = 1'
+vim.cmd 'autocmd FileType scss setl iskeyword+=@-@'
 
 -- Sessions
 vim.g.session_autosave='yes'

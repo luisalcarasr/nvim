@@ -25,6 +25,7 @@ vim.opt.hidden = true
 vim.opt.cmdheight = 1
 vim.opt.updatetime = 300
 vim.opt.signcolumn = 'yes'
+vim.opt.splitright = true
 
 vim.cmd 'syntax on'
 vim.cmd 'set nocompatible'
@@ -40,5 +41,5 @@ vim.cmd 'set shortmess+=c'
 
 require 'plugins'
 require 'config'
-vim.cmd 'source ~/.config/nvim/shortcuts.vim'
 require 'settings.color'
+require 'settings.keymap'
