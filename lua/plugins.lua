@@ -36,7 +36,7 @@ return require('packer').startup(function(use)
   use 'neoclide/coc.nvim'-- , {'branch': 'release'}
 
   -- Test
-  -- use 'tyewang/vimux-jest-test'
+  use 'tyewang/vimux-jest-test'
   -- use 'janko-m/vim-test'
 
   -- IDE

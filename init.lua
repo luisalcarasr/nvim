@@ -33,11 +33,7 @@ vim.cmd('set noshowmode');
 vim.cmd('autocmd FileType typescript setlocal completeopt-=menu');
 vim.cmd('filetype plugin indent on');
 
--- vim.cmd('source ~/.config/nvim/autoload/plug.vim')
--- vim.cmd('source ~/.config/nvim/plugins.vim')
 require('plugins')
 vim.cmd('source ~/.config/nvim/shortcuts.vim')
--- vim.cmd('source ~/.config/nvim/plugin-config.vim')
-
--- vim.cmd('colorscheme onedark');
--- vim.cmd('highlight Normal ctermbg=NONE');
+vim.cmd('source ~/.config/nvim/plugin-config.vim')
+require('settings.color')
