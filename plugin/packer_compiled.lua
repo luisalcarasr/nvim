@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/home/luis/.local/share/nvim/site/pack/packer/start/blamer.nvim",
     url = "https://github.com/APZelos/blamer.nvim"
   },
-  ["coc.nvim"] = {
+  ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["editorconfig-vim"] = {
     loaded = true,
@@ -109,35 +109,41 @@ _G.packer_plugins = {
     path = "/home/luis/.local/share/nvim/site/pack/packer/start/indentline",
     url = "https://github.com/yggdroot/indentline"
   },
-  ["lightline-ale"] = {
+  ["lspkind-nvim"] = {
     loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/lightline-ale",
-    url = "https://github.com/maximbaz/lightline-ale"
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
-  ["lightline-onedark"] = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/lightline-onedark",
-    url = "https://github.com/NovaDev94/lightline-onedark"
-  },
-  ["lightline.vim"] = {
-    loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/lightline.vim",
-    url = "https://github.com/itchyny/lightline.vim"
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   nerdcommenter = {
     loaded = true,
     path = "/home/luis/.local/share/nvim/site/pack/packer/start/nerdcommenter",
     url = "https://github.com/scrooloose/nerdcommenter"
   },
-  nerdtree = {
+  ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/scrooloose/nerdtree"
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nerdtree-git-plugin"] = {
+  ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/nerdtree-git-plugin",
-    url = "https://github.com/Xuyuanp/nerdtree-git-plugin"
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    config = { "\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0" },
+    loaded = true,
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/luis/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
@@ -178,11 +184,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/luis/.local/share/nvim/site/pack/packer/start/vim-http",
     url = "https://github.com/nicwest/vim-http"
-  },
-  ["vim-lightline-coc"] = {
-    loaded = true,
-    path = "/home/luis/.local/share/nvim/site/pack/packer/start/vim-lightline-coc",
-    url = "https://github.com/josa42/vim-lightline-coc"
   },
   ["vim-matchit"] = {
     loaded = true,
@@ -242,6 +243,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 
 end)

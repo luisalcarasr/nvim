@@ -13,14 +13,13 @@ vim.api.nvim_set_keymap('n', '<Leader>qa', ':qa<CR>', {noremap = true, silent = 
 vim.api.nvim_set_keymap('n', '<Leader>x', ':x<CR>', {noremap = true, silent = true});
 
 -- plugs
-vim.api.nvim_set_keymap('n', '<C-a>', ':NERDTreeToggle<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>nt', ':NERDTreeFind<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<C-a>', ':NvimTreeToggle<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>nt', ':NvimTreeFindFile<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>p', ':Files<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>rg', ':Rg<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>ag', ':Ag<cr>', {noremap = true, silent = true});
 
--- Use <c-space> to trigger completion.
--- inoremap <silent><expr> <c-space> coc#refresh()
+-- Use <c-space> to trigger completion. inoremap <silent><expr> <c-space> coc#refresh()
  
 -- Remap keys for gotos
 vim.api.nvim_set_keymap('n', 'gd', '<Plug>(coc-definition)', {noremap = false, silent = true});
@@ -64,3 +63,7 @@ vim.api.nvim_set_keymap('n', '<leader>ft', ':Rg "<C-R>=expand("<cword>")<CR>":<C
 -- else
 --   inoremap <silent><expr> <c-space> coc#refresh()
 -- endif
+
+-- Debugging
+vim.api.nvim_set_keymap('n', '<Leader>di', '<Plug>VimspectorBalloonEval', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('x', '<Leader>di', '<Plug>VimspectorBalloonEval', {noremap = true, silent = true});

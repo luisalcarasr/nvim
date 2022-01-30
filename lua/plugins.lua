@@ -25,7 +25,13 @@ return require('packer').startup(function(use)
   }
 
   -- Explorer
-  use 'scrooloose/nerdtree'
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+        'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      },
+      config = function() require'nvim-tree'.setup {} end
+  }
 
   -- Typing
   use 'jiangmiao/auto-pairs'
@@ -34,7 +40,10 @@ return require('packer').startup(function(use)
   use 'kamykn/spelunker.vim'
 
   -- Autocomplete
-  use {'neoclide/coc.nvim', branch='release'}
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+  use 'onsails/lspkind-nvim'
 
   -- Test
   use 'tyewang/vimux-jest-test'
@@ -64,12 +73,15 @@ return require('packer').startup(function(use)
 
   -- Git
   use 'tpope/vim-fugitive'
-  use 'Xuyuanp/nerdtree-git-plugin'
+  -- use 'Xuyuanp/nerdtree-git-plugin'
   use 'tpope/vim-repeat'
   use 'APZelos/blamer.nvim'
   use 'mhinz/vim-signify'
 
   -- Themes
   use 'joshdick/onedark.vim'
+
+  -- Debugging
+  -- use 'mfussenegger/nvim-dap'
 
 end)

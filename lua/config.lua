@@ -41,18 +41,6 @@ vim.g.mta_filetypes = {
   jsx = 1,
 }
 
---  nerdtree
-vim.g.NERDTreeShowHidden=1
-vim.g.NERDTreeQuitOnOpen=1
-vim.g.NERDTreeAutoDeleteBuffer=1
-vim.g.NERDTreeMinimalUI=1
-vim.g.NERDTreeDirArrows=1
-vim.g.NERDTreeShowLineNumbers=1
-vim.g.NERDTreeMapOpenInTab='\t'
-vim.g.NERDTreeShowBookmarks=1
-vim.g.NERDTreeWinSize=50
-
-
 vim.g.javascript_plugin_flow = 1
 
 -- coc
