@@ -73,7 +73,6 @@ return require('packer').startup(function(use)
 
   -- Git
   use 'tpope/vim-fugitive'
-  -- use 'Xuyuanp/nerdtree-git-plugin'
   use 'tpope/vim-repeat'
   use 'APZelos/blamer.nvim'
   use 'mhinz/vim-signify'
@@ -81,7 +80,15 @@ return require('packer').startup(function(use)
   -- Themes
   use 'joshdick/onedark.vim'
 
+  -- ZenMode
+  use {
+  "folke/zen-mode.nvim",
+  config = function()
+    require("zen-mode").setup {}
+  end
+}
+
   -- Debugging
-  -- use 'mfussenegger/nvim-dap'
+  use 'mfussenegger/nvim-dap'
 
 end)

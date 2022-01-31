@@ -65,5 +65,6 @@ vim.api.nvim_set_keymap('n', '<leader>ft', ':Rg "<C-R>=expand("<cword>")<CR>":<C
 -- endif
 
 -- Debugging
-vim.api.nvim_set_keymap('n', '<Leader>di', '<Plug>VimspectorBalloonEval', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('x', '<Leader>di', '<Plug>VimspectorBalloonEval', {noremap = true, silent = true});
+
+-- ZenMode
+vim.api.nvim_set_keymap('n', '<Leader>z', ':ZenMode<cr>', {noremap = true, silent = true});
