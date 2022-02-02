@@ -49,10 +49,14 @@ return require('packer').startup(function(use)
   use 'tyewang/vimux-jest-test'
   -- use 'janko-m/vim-test'
 
+  -- Search
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- IDE
   use 'editorconfig/editorconfig-vim'
-  use 'junegunn/fzf'
-  use 'junegunn/fzf.vim'
   use 'terryma/vim-multiple-cursors'
   use 'easymotion/vim-easymotion'
   use 'yggdroot/indentline'
@@ -82,13 +86,22 @@ return require('packer').startup(function(use)
 
   -- ZenMode
   use {
-  "folke/zen-mode.nvim",
-  config = function()
-    require("zen-mode").setup {}
-  end
-}
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup {}
+    end
+  }
 
   -- Debugging
   use 'mfussenegger/nvim-dap'
+
+  -- MongoDB
+  use { 
+    'thibthib18/mongo-nvim', 
+    rocks = {'lua-mongo'},
+    config=function()
+      require 'mongo-nvim'.setup({})
+    end
+  }
 
 end)

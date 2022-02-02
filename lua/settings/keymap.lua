@@ -15,8 +15,8 @@ vim.api.nvim_set_keymap('n', '<Leader>x', ':x<CR>', {noremap = true, silent = tr
 -- plugs
 vim.api.nvim_set_keymap('n', '<C-a>', ':NvimTreeToggle<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>nt', ':NvimTreeFindFile<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>p', ':Files<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>rg', ':Rg<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>p', ':Telescope find_files<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>rg', ':Telescope live_grep<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>ag', ':Ag<cr>', {noremap = true, silent = true});
 
 -- Use <c-space> to trigger completion. inoremap <silent><expr> <c-space> coc#refresh()
