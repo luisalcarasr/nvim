@@ -68,3 +68,7 @@ vim.api.nvim_set_keymap('n', '<leader>ft', ':Rg "<C-R>=expand("<cword>")<CR>":<C
 
 -- ZenMode
 vim.api.nvim_set_keymap('n', '<Leader>z', ':ZenMode<cr>', {noremap = true, silent = true});
+
+-- MongoDB
+vim.api.nvim_set_keymap('n', '<Leader>d', ':lua require("mongo-nvim.telescope.pickers").database_picker()<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>dp', ':lua require("mongo-nvim.telescope.pickers").database_picker("auxoneDB", "firstName")<cr>', {noremap = true, silent = true});

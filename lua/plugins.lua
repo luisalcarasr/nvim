@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'onsails/lspkind-nvim'
+  use 'L3MON4D3/LuaSnip'
 
   -- Test
   use 'tyewang/vimux-jest-test'
@@ -99,9 +100,6 @@ return require('packer').startup(function(use)
   use { 
     'thibthib18/mongo-nvim', 
     rocks = {'lua-mongo'},
-    config=function()
-      require 'mongo-nvim'.setup({})
-    end
   }
 
 end)
