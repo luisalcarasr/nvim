@@ -66,6 +66,12 @@ return require('packer').startup(function(use)
   use 'AndrewRadev/tagalong.vim'
   use 'mattn/emmet-vim'
 
+  -- Prettier
+  use {
+    'mhartington/formatter.nvim',
+    config = function() require('formatter').setup {} end
+  }
+
   -- Tmux
   use 'christoomey/vim-tmux-navigator'
 
@@ -73,8 +79,8 @@ return require('packer').startup(function(use)
   use 'nicwest/vim-http'
 
   -- Sessions
-  use 'xolox/vim-misc'
-  use 'xolox/vim-session'
+  -- use 'xolox/vim-misc'
+  -- use 'xolox/vim-session'
 
   -- Git
   use 'tpope/vim-fugitive'
@@ -83,6 +89,7 @@ return require('packer').startup(function(use)
   use 'mhinz/vim-signify'
 
   -- Themes
+  use 'xiyaowong/nvim-transparent'
   use 'joshdick/onedark.vim'
 
   -- ZenMode

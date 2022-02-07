@@ -5,3 +5,16 @@ if vim.fn.has("termguicolors") == 1 then
 end
 vim.cmd 'color onedark'
 vim.cmd 'highlight Normal ctermbg=NONE'
+
+require("transparent").setup({
+  enable = true,
+  extra_groups = {
+    "BufferLineTabClose",
+    "BufferlineBufferSelected",
+    "BufferLineFill",
+    "BufferLineBackground",
+    "BufferLineSeparator",
+    "BufferLineIndicatorSelected",
+  },
+  exclude = {},
+})
