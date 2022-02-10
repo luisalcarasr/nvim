@@ -6,26 +6,31 @@ vim.api.nvim_set_keymap('n', '<Leader><', '10<C-w><', {noremap = true, silent = 
 
 -- quick semi
 vim.api.nvim_set_keymap('n', '<Leader>;', '$a;<Esc>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>,', '$a,<Esc>', {noremap = true, silent = true});
 
-vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>w', ':w!<CR>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>qq', ':q<CR>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>qa', ':qa<CR>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>x', ':x<CR>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>qx', ':x<CR>', {noremap = true, silent = true});
 
--- plugs
-vim.api.nvim_set_keymap('n', '<C-a>', ':NvimTreeToggle<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>nt', ':NvimTreeFindFile<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>p', ':Telescope find_files<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>rg', ':Telescope live_grep<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>ag', ':Ag<cr>', {noremap = true, silent = true});
+-- Explorer
+vim.api.nvim_set_keymap('n', '<Leader>aa', ':NvimTreeToggle<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>af', ':NvimTreeFindFile<cr>', {noremap = true, silent = true});
+
+-- Find
+vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>fw', ':Telescope grep_string<cr>', {noremap = true, silent = true});
+-- vim.api.nvim_set_keymap('n', '<leader>ft', ':Telescope live_grep "<C-R>=expand("<cword>")<CR>":<CR>', {noremap = true, silent = true});
 
 -- Use <c-space> to trigger completion. inoremap <silent><expr> <c-space> coc#refresh()
  
 -- Remap keys for gotos
-vim.api.nvim_set_keymap('n', 'gd', '<Plug>(coc-definition)', {noremap = false, silent = true});
-vim.api.nvim_set_keymap('n', 'gy', '<Plug>(coc-type-definition)', {noremap = false, silent = true});
-vim.api.nvim_set_keymap('n', 'gi', '<Plug>(coc-implementation)', {noremap = false, silent = true});
-vim.api.nvim_set_keymap('n', 'gr', '<Plug>(coc-references)', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gy', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = false, silent = true});
 
 -- diagnostics
 -- nnoremap <leader>kp :let @*=expand("%")<CR>
@@ -35,9 +40,9 @@ vim.api.nvim_set_keymap('n', '<Leader>h', ':tabprevious<cr>', {noremap = true, s
 vim.api.nvim_set_keymap('n', '<Leader>l', ':tabnext<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>t', ':tabnew<cr>', {noremap = true, silent = true});
 
--- buffers
--- map <Leader>ob :Buffers<cr>
-vim.api.nvim_set_keymap('n', '<Leader>ob', ':Buffers<cr>', {noremap = true, silent = true});
+-- Buffers
+vim.api.nvim_set_keymap('n', '<Leader>j', ':bn<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>k', ':bp<cr>', {noremap = true, silent = true});
 
 
 -- faster scrolling
@@ -53,9 +58,6 @@ vim.api.nvim_set_keymap('n', 'gl', ':Git pull<cr>', {noremap = true, silent = tr
 -- emmet
 vim.g.user_emmet_leader_key='<C-x>'
 
--- Find
-vim.api.nvim_set_keymap('n', '<leader>ff', ':Rg <C-R>=expand("<cword>")<CR><CR>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<leader>ft', ':Rg "<C-R>=expand("<cword>")<CR>":<CR>', {noremap = true, silent = true});
 
 -- Use <c-space> to trigger completion.
 -- if &filetype == "javascript-- || &filetype == "python"

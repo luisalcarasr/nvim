@@ -14,8 +14,8 @@ require('packer').init({display = {auto_clean = false}})
 
 return require('packer').startup(function(use)
   -- Syntax
-  use 'ap/vim-css-color'
   use 'sheerun/vim-polyglot'
+  use 'ap/vim-css-color'
   use 'wavded/vim-stylus'
 
   -- Status Bar
@@ -45,6 +45,13 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'onsails/lspkind-nvim'
   use 'L3MON4D3/LuaSnip'
+  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+
+  -- Buffers
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
 
   -- Test
   use 'tyewang/vimux-jest-test'
