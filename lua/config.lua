@@ -44,8 +44,6 @@ vim.g.mta_filetypes = {
 vim.g.javascript_plugin_flow = 1
 
 -- coc
-vim.cmd 'autocmd FileType python vim.g.b:coc_suggest_disable = 1'
-vim.cmd 'autocmd FileType javascript vim.g.b:coc_suggest_disable = 1'
 vim.cmd 'autocmd FileType scss setl iskeyword+=@-@'
 
 -- Sessions
