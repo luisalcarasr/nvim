@@ -3,12 +3,11 @@
 
 # Prerequisites
 
-- NeoVim >= 0.3.x
-- Git >= v2.20.1
-- Node >= v12.12
-- Ripgrep >= v0.10.0
-- Python >= v3.7.3
-- pynvim >= 0.4.2
+- nvim >= 0.6.x
+- git >= 2.35.x
+- node >= 14.19.x
+- npm >= 8.4.x
+- xclip >= 0.13.x
 
 # Installation
 
@@ -24,14 +23,14 @@ Clone the project
 git clone https://github.com/luisalcarasr/nvim.git
 ```
 
+Install TypeScript Language Servers (Autocomplete support)
+
+```
+sudo npm i -g vscode-langservers-extracted typescript typescript-language-server eslint-language-server
+```
+
 Install the plugins
 
 ```
-:PlugInstall
-```
-
-Install Language Server (Autocomplete support)
-
-```
-:CocInstall coc-json coc-tsserver coc-html coc-css
+:PackerSync
 ```
