@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   use 'sheerun/vim-polyglot'
   use 'ap/vim-css-color'
   use 'wavded/vim-stylus'
+  use 'luochen1990/rainbow'
 
   -- Status Bar
   use {
@@ -33,18 +34,20 @@ return require('packer').startup(function(use)
       config = function() require'nvim-tree'.setup {} end
   }
 
+
+  -- Tags
+  use 'alvan/vim-closetag'
+
   -- Typing
   use 'jiangmiao/auto-pairs'
-  use 'alvan/vim-closetag'
-  use 'tpope/vim-surround'
   use 'kamykn/spelunker.vim'
 
-  -- Autocomplete
-  use 'neovim/nvim-lspconfig'
+  -- Language Support Protocol
+  use 'neovim/nvim-lspconfig' -- LSP configuration
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
-  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-  use 'onsails/lspkind-nvim'
-  use 'L3MON4D3/LuaSnip'
+  use 'hrsh7th/nvim-cmp' -- Autocompletion menu
+  use 'onsails/lspkind-nvim' -- Icons for autocompletion menu
+  use 'L3MON4D3/LuaSnip' -- Snippets engine
 
   -- AI Assistant
   use 'github/copilot.vim'
@@ -59,7 +62,8 @@ return require('packer').startup(function(use)
   use 'tyewang/vimux-jest-test'
   -- use 'janko-m/vim-test'
 
-  -- Search
+  -- Finding
+  use 'tpope/vim-surround'
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -92,9 +96,9 @@ return require('packer').startup(function(use)
   -- use 'xolox/vim-session'
 
   -- Git
-  use 'tpope/vim-fugitive'
+  use 'tpope/vim-fugitive' -- Git integration
   use 'tpope/vim-repeat'
-  use 'APZelos/blamer.nvim'
+  use 'APZelos/blamer.nvim' -- Show author of the line
   use 'mhinz/vim-signify'
 
   -- Themes

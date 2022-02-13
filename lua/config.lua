@@ -1,8 +1,5 @@
--- HTML, JSX
-vim.g.closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
-
 -- Status Bar
-require'lualine'.setup {
+require 'lualine'.setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
@@ -14,7 +11,7 @@ require'lualine'.setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff',
-                  {'diagnostics', sources={'nvim_lsp', 'coc'}}},
+                  {'diagnostics', sources={'nvim_lsp'}}},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
@@ -32,38 +29,18 @@ require'lualine'.setup {
   extensions = {}
 }
 
-vim.g.mta_filetypes = {
-  html = 1,
-  xhtml = 1,
-  xml = 1,
-  jinja = 1,
-  tsx = 1,
-  jsx = 1,
-}
+-- Syntax
+vim.g.rainbow_enable = 1
 
-vim.g.javascript_plugin_flow = 1
-
--- coc
-vim.cmd 'autocmd FileType scss setl iskeyword+=@-@'
+-- Tags
+vim.g.closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 
 -- Sessions
 vim.g.session_autosave='yes'
 vim.g.session_autoload='yes'
 
--- vim fugitive
--- vim.cmd 'command! -bang -nargs=? -complete=dir GFiles
---  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)'
--- 
--- vim.cmd 'command! -bang -nargs=* Ag
---  \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview(), <bang>0)'
--- 
--- vim.cmd 'command! -bang -nargs=? -complete=dir Files
---  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)'
-
--- vim.cmd 'let $FZF_DEFAULT_OPTS=----layout=reverse --preview \'bat --color=always --style=header,grid --line-range :300 {}\'"'
-
--- Spell
-vim.g.enable_spelunker_vim = 0
+-- Spelling
+vim.g.enable_spelunker_vim = 1
 vim.g.spelunker_max_hi_words_each_buf = 2048
 
 -- Markdown
@@ -73,7 +50,3 @@ vim.g.vim_markdown_conceal_code_blocks = 0
 -- Git
 vim.g.blamer_enabled=1
 vim.g.blamer_delay=200
-
--- CoC
-vim.g.coc_disable_startup_warning = 1
-
