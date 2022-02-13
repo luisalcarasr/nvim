@@ -34,6 +34,16 @@ return require('packer').startup(function(use)
       config = function() require'nvim-tree'.setup {} end
   }
 
+  -- Clipboard History
+  use {
+    'AckslD/nvim-neoclip.lua',
+    requires = {
+      'nvim-telescope/telescope.nvim',
+    },
+    config = function()
+      require('neoclip').setup()
+    end,
+  }
 
   -- Tags
   use 'alvan/vim-closetag'

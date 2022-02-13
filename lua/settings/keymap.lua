@@ -22,6 +22,8 @@ vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<cr>', {noremap
 vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>fw', ':Telescope grep_string<cr>', {noremap = true, silent = true});
 -- vim.api.nvim_set_keymap('n', '<leader>ft', ':Telescope live_grep "<C-R>=expand("<cword>")<CR>":<CR>', {noremap = true, silent = true});
+-- Clipboard History
+vim.api.nvim_set_keymap('n', '<leader>ch', ':Telescope neoclip plus initial_mode=normal<cr>', {noremap = true, silent = true});
 
 -- Use <c-space> to trigger completion. inoremap <silent><expr> <c-space> coc#refresh()
  
