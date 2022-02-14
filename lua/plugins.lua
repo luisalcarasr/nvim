@@ -32,7 +32,6 @@ return require('packer').startup(function(use)
         'kyazdani42/nvim-web-devicons', -- optional, for file icon
       },
       config = function() require'nvim-tree'.setup {
-          auto_close = true,
           view = {
             width = 40,
           },
