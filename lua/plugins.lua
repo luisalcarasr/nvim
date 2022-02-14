@@ -31,7 +31,17 @@ return require('packer').startup(function(use)
       requires = {
         'kyazdani42/nvim-web-devicons', -- optional, for file icon
       },
-      config = function() require'nvim-tree'.setup {} end
+      config = function() require'nvim-tree'.setup {
+          auto_close = true,
+          view = {
+            width = 40,
+          },
+          actions = {
+            open_file = {
+              quit_on_open = true,
+            }
+          }
+      } end
   }
 
   -- Clipboard History

@@ -40,7 +40,7 @@ vim.g.session_autosave='yes'
 vim.g.session_autoload='yes'
 
 -- Spelling
-vim.g.enable_spelunker_vim = 1
+vim.g.enable_spelunker_vim = 0
 vim.g.spelunker_max_hi_words_each_buf = 2048
 
 -- Markdown
