@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use 'ap/vim-css-color'
   use 'wavded/vim-stylus'
   use 'luochen1990/rainbow'
+  use 'nvim-treesitter/nvim-treesitter'
 
   -- Status Bar
   use {

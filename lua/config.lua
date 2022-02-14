@@ -50,3 +50,22 @@ vim.g.vim_markdown_conceal_code_blocks = 0
 -- Git
 vim.g.blamer_enabled=1
 vim.g.blamer_delay=200
+
+-- Syntax
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained",
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+}
+
+-- Buffers
+vim.g.bufferline = {
+  auto_hide = true,
+}
+
+-- Zen Mode
+require("zen-mode").setup {
+  width = 130,
+}

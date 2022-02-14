@@ -27,7 +27,7 @@ vim.opt.updatetime = 300
 vim.opt.signcolumn = 'yes'
 vim.opt.splitright = true
 
-vim.cmd 'syntax on'
+-- vim.cmd 'syntax on'
 vim.cmd 'set nocompatible'
 vim.cmd 'set t_Co=256'
 vim.cmd 'set nobackup'
