@@ -63,11 +63,12 @@ return require('packer').startup(function(use)
   use 'kamykn/spelunker.vim'
 
   -- Language Support Protocol
+  use 'L3MON4D3/LuaSnip' -- Snippets engine
   use 'neovim/nvim-lspconfig' -- LSP configuration
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   use 'hrsh7th/nvim-cmp' -- Autocompletion menu
   use 'onsails/lspkind-nvim' -- Icons for autocompletion menu
-  use 'L3MON4D3/LuaSnip' -- Snippets engine
+  use 'saadparwaiz1/cmp_luasnip' -- Snippets integration with CMP
 
   -- AI Assistant
   use 'github/copilot.vim'

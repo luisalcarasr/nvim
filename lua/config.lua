@@ -69,3 +69,6 @@ vim.g.bufferline = {
 require("zen-mode").setup {
   width = 130,
 }
+
+-- Snippets
+require("luasnip.loaders.from_snipmate").load()
