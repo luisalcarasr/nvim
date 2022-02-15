@@ -135,6 +135,7 @@ return require('packer').startup(function(use)
 
   -- Debugging
   use 'mfussenegger/nvim-dap'
+  use 'Pocco81/DAPInstall.nvim'
 
   -- MongoDB
   use { 
