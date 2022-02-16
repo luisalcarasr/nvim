@@ -41,10 +41,10 @@ vim.api.nvim_set_keymap('n', '<Leader>t', ':tabnew<cr>', {noremap = true, silent
 -- Buffers
 vim.api.nvim_set_keymap('n', '<leader>bb', ':Telescope buffers initial_mode=normal<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>bw', ':bw!<CR>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<A-l>', ':BufferNext<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<A-h>', ':BufferPrevious<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<A-L>', ':BufferMoveNext<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<A-H>', ':BufferMovePrevious<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>bl', ':BufferNext<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>bh', ':BufferPrevious<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>bL', ':BufferMoveNext<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>bH', ':BufferMovePrevious<cr>', {noremap = true, silent = true});
 
 
 -- Scrolling
