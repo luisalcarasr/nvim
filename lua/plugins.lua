@@ -144,4 +144,14 @@ return require('packer').startup(function(use)
     rocks = {'lua-mongo'},
   }
 
+  -- Markdown
+  use { 
+    'iamcco/markdown-preview.nvim',
+    ft = 'markdown',
+    run = 'cd app && yarn install'
+  }
+  use {
+    'preservim/vim-markdown',
+    requires = { 'godlygeek/tabular' }
+  }
 end)

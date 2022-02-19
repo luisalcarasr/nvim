@@ -46,6 +46,7 @@ vim.g.spelunker_max_hi_words_each_buf = 2048
 -- Markdown
 vim.g.vim_markdown_conceal = 0
 vim.g.vim_markdown_conceal_code_blocks = 0
+vim.g.vim_markdown_folding_disabled = 1
 
 -- Git
 vim.g.blamer_enabled=1
