@@ -125,6 +125,7 @@ return require('packer').startup(function(use)
   -- Themes
   use 'xiyaowong/nvim-transparent'
   use 'joshdick/onedark.vim'
+  use 'dracula/vim'
 
   -- ZenMode
   use {
