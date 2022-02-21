@@ -15,7 +15,7 @@ vim.api.nvim_set_keymap('n', '<Leader>qa', ':qa<CR>', {noremap = true, silent = 
 vim.api.nvim_set_keymap('n', '<Leader>qx', ':x<CR>', {noremap = true, silent = true});
 
 -- Explorer
-vim.api.nvim_set_keymap('n', '<Leader>aa', ':NvimTreeToggle<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>aa', ':NvimTreeOpen<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>af', ':NvimTreeFindFile<cr>', {noremap = true, silent = true});
 
 -- Find
@@ -33,18 +33,13 @@ vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', 
 vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = false, silent = true});
 
--- Tabs
-vim.api.nvim_set_keymap('n', '<Leader>h', ':tabprevious<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>l', ':tabnext<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>t', ':tabnew<cr>', {noremap = true, silent = true});
-
 -- Buffers
 vim.api.nvim_set_keymap('n', '<leader>bb', ':Telescope buffers initial_mode=normal<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>bw', ':bw!<CR>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<leader>bl', ':BufferNext<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<leader>bh', ':BufferPrevious<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<leader>bL', ':BufferMoveNext<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<leader>bH', ':BufferMovePrevious<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>l', ':BufferLineCycleNext<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>h', ':BufferLineCyclePrev<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>L', ':BufferLineMoveNext<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>H', ':BufferLineMovePrev<cr>', {noremap = true, silent = true});
 
 
 -- Scrolling
@@ -56,9 +51,6 @@ vim.api.nvim_set_keymap('n', '<Leader>s', '<Plug>(easymotion-s2)', {noremap = fa
 vim.api.nvim_set_keymap('n', 'G', ':Git<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', 'gp', ':Git push<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', 'gl', ':Git pull<cr>', {noremap = true, silent = true});
-
--- Emmet
-vim.g.user_emmet_leader_key='<C-x>'
 
 -- ZenMode
 vim.api.nvim_set_keymap('n', '<Leader>z', ':ZenMode<cr>', {noremap = true, silent = true});

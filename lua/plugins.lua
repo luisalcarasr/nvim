@@ -13,10 +13,23 @@ vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when th
 require('packer').init({display = {auto_clean = false}})
 
 return require('packer').startup(function(use)
+  -- Explorer
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+        'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      },
+  }
+
+  -- Buffers
+  use {
+    'akinsho/bufferline.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'},
+  }
+
   -- Syntax
   use 'sheerun/vim-polyglot'
   use 'ap/vim-css-color'
-  use 'wavded/vim-stylus'
   use 'luochen1990/rainbow'
   use 'nvim-treesitter/nvim-treesitter'
 
@@ -26,23 +39,6 @@ return require('packer').startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
-  -- Explorer
-  use {
-      'kyazdani42/nvim-tree.lua',
-      requires = {
-        'kyazdani42/nvim-web-devicons', -- optional, for file icon
-      },
-      config = function() require'nvim-tree'.setup {
-          view = {
-            width = 40,
-          },
-          actions = {
-            open_file = {
-              quit_on_open = true,
-            }
-          }
-      } end
-  }
 
   -- Clipboard History
   use {
@@ -73,12 +69,6 @@ return require('packer').startup(function(use)
   -- AI Assistant
   use 'github/copilot.vim'
 
-  -- Buffers
-  use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
-
   -- Test
   use 'tyewang/vimux-jest-test'
   -- use 'janko-m/vim-test'
@@ -98,7 +88,6 @@ return require('packer').startup(function(use)
   use 'scrooloose/nerdcommenter'
   use 'adelarsq/vim-matchit'
   use 'AndrewRadev/tagalong.vim'
-  use 'mattn/emmet-vim'
 
   -- Prettier
   use {

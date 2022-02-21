@@ -5,6 +5,7 @@ if vim.fn.has("termguicolors") == 1 then
 end
 require('onedark').setup {
   style = 'deep',
+  toggle_style_key = '<leader>T',
 }
 require('onedark').load()
 
