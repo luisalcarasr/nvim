@@ -73,3 +73,6 @@ require("zen-mode").setup {
 
 -- Snippets
 require("luasnip.loaders.from_snipmate").load()
+
+-- Sudo
+vim.g.suda_smart_edit = 1

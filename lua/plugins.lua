@@ -143,4 +143,7 @@ return require('packer').startup(function(use)
     'preservim/vim-markdown',
     requires = { 'godlygeek/tabular' }
   }
+
+  -- Sudo
+  use 'lambdalisue/suda.vim'
 end)
