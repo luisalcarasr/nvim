@@ -22,6 +22,7 @@ vim.api.nvim_set_keymap('n', '<Leader>af', ':NvimTreeFindFile<cr>', {noremap = t
 vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>fw', ':Telescope grep_string initial_mode=normal<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope oldfiles initial_mode=normal<cr>', {noremap = true, silent = true});
 
 -- Clipboard History
 vim.api.nvim_set_keymap('n', '<leader>ch', ':Telescope neoclip plus initial_mode=normal<cr>', {noremap = true, silent = true});
@@ -30,12 +31,13 @@ vim.api.nvim_set_keymap('n', '<leader>ch', ':Telescope neoclip plus initial_mode
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gy', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', {noremap = false, silent = true});
-vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gf', ':Telescope lsp_code_actions initial_mode=normal<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gr', ':Telescope lsp_references initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = false, silent = true});
 
 -- Buffers
 vim.api.nvim_set_keymap('n', '<leader>bb', ':Telescope buffers initial_mode=normal<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<Leader>bw', ':bw!<CR>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<Leader>bw', ':bw!<cr><cms>lua require"nvim-tree.toggle(false, false)<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>l', ':BufferLineCycleNext<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>h', ':BufferLineCyclePrev<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>L', ':BufferLineMoveNext<cr>', {noremap = true, silent = true});

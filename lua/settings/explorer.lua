@@ -11,4 +11,4 @@ require'nvim-tree'.setup {
     }
 }
 
-vim.cmd 'NvimTreeOpen'
+-- vim.cmd 'NvimTreeOpen'
