@@ -15,7 +15,7 @@ vim.api.nvim_set_keymap('n', '<Leader>qa', ':qa<CR>', {noremap = true, silent = 
 vim.api.nvim_set_keymap('n', '<Leader>qx', ':x<CR>', {noremap = true, silent = true});
 
 -- Explorer
-vim.api.nvim_set_keymap('n', '<Leader>aa', ':NvimTreeOpen<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<C-a>', ':NvimTreeToggle<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<Leader>af', ':NvimTreeFindFile<cr>', {noremap = true, silent = true});
 
 -- Find
