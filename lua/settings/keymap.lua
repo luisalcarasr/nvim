@@ -55,6 +55,9 @@ vim.api.nvim_set_keymap('n', '<leader>gc', ':Git commit -a<cr>', {noremap = true
 vim.api.nvim_set_keymap('n', '<leader>gp', ':Git push<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>gl', ':Git pull<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope git_status initial_mode=normal<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gh', ':Telescope git_commits initial_mode=normal<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gf', ':Telescope git_bcommits initial_mode=normal<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches initial_mode=normal<cr>', {noremap = true, silent = true});
 
 -- ZenMode
 vim.api.nvim_set_keymap('n', '<Leader>z', ':ZenMode<cr>', {noremap = true, silent = true});
