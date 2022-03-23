@@ -89,6 +89,22 @@ return require('packer').startup(function(use)
   use 'adelarsq/vim-matchit'
   use 'AndrewRadev/tagalong.vim'
 
+  -- TO-DO
+  use {
+  "folke/todo-comments.nvim",
+  requires = "nvim-lua/plenary.nvim",
+  config = function()
+    require("todo-comments").setup {
+      highlight = {
+        before = "",
+        keyword = "fg",
+        after = "",
+        comments_only = true,
+      },
+    }
+  end
+}
+
   -- Prettier
   use {
     'mhartington/formatter.nvim',

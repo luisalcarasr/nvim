@@ -23,6 +23,7 @@ vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<cr>', {noremap
 vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>fw', ':Telescope grep_string initial_mode=normal<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope oldfiles initial_mode=normal<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>ft', ':Telescope todo-comments todo initial_mode=normal<CR>', {noremap = false, silent = true});
 
 -- Clipboard History
 vim.api.nvim_set_keymap('n', '<leader>ch', ':Telescope neoclip plus initial_mode=normal<cr>', {noremap = true, silent = true});
