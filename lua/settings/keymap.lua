@@ -51,7 +51,7 @@ vim.api.nvim_set_keymap('n', '<Leader>s', '<Plug>(easymotion-s2)', {noremap = fa
 
 -- Git
 vim.api.nvim_set_keymap('n', '<leader>gg', ':Git<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', '<leader>gc', ':Git commit -A<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gc', ':Git commit -a<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>gp', ':Git push<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>gl', ':Git pull<cr>', {noremap = true, silent = true});
 vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope git_status initial_mode=normal<cr>', {noremap = true, silent = true});
