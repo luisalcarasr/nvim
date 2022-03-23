@@ -123,9 +123,17 @@ return require('packer').startup(function(use)
 
   -- Git
   use 'tpope/vim-fugitive' -- Git integration
-  use 'tpope/vim-repeat'
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = function()
+      require('gitsigns').setup {}
+    end
+  }
   use 'APZelos/blamer.nvim' -- Show author of the line
-  use 'mhinz/vim-signify'
+  -- use 'mhinz/vim-signify'
 
   -- Themes
   use 'xiyaowong/nvim-transparent'
