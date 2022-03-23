@@ -30,7 +30,7 @@ vim.api.nvim_set_keymap('n', '<leader>ch', ':Telescope neoclip plus initial_mode
 -- LSP Completion
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gy', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = false, silent = true});
-vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gi', ':Telescope lsp_implementation initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gf', ':Telescope lsp_code_actions initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gr', ':Telescope lsp_references initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = false, silent = true});
@@ -50,9 +50,11 @@ vim.api.nvim_set_keymap('n', '<C-k>', '10<C-y>', {noremap = true, silent = true}
 vim.api.nvim_set_keymap('n', '<Leader>s', '<Plug>(easymotion-s2)', {noremap = false, silent = true});
 
 -- Git
-vim.api.nvim_set_keymap('n', 'G', ':Git<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', 'gp', ':Git push<cr>', {noremap = true, silent = true});
-vim.api.nvim_set_keymap('n', 'gl', ':Git pull<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gg', ':Git<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gc', ':Git commit -A<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gp', ':Git push<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gl', ':Git pull<cr>', {noremap = true, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>gs', ':Telescope git_status initial_mode=normal<cr>', {noremap = true, silent = true});
 
 -- ZenMode
 vim.api.nvim_set_keymap('n', '<Leader>z', ':ZenMode<cr>', {noremap = true, silent = true});
