@@ -129,7 +129,9 @@ return require('packer').startup(function(use)
       'nvim-lua/plenary.nvim'
     },
     config = function()
-      require('gitsigns').setup {}
+      require('gitsigns').setup {
+        sign_priority = 9,
+      }
     end
   }
   use 'APZelos/blamer.nvim' -- Show author of the line
