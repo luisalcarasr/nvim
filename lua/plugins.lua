@@ -53,6 +53,12 @@ return require('packer').startup(function(use)
 
   -- Tags
   use 'alvan/vim-closetag'
+  use {
+    'windwp/nvim-ts-autotag',
+    config  = function()
+      require('nvim-ts-autotag').setup()
+    end,
+  }
 
   -- Typing
   use 'jiangmiao/auto-pairs'
