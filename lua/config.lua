@@ -54,11 +54,15 @@ vim.g.blamer_delay=200
 
 -- Syntax
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained",
+  ensure_installed = "all",
   highlight = {
     enable = true,
     additional_vim_regex_highlighting = false,
   },
+  autotag = {
+    enable = true,
+    filetypes = { 'html', 'xml', 'tsx', 'typescriptreact'},
+  }
 }
 
 -- Buffers

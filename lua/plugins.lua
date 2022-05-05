@@ -52,13 +52,12 @@ return require('packer').startup(function(use)
   }
 
   -- Tags
-  use 'alvan/vim-closetag'
-  use {
-    'windwp/nvim-ts-autotag',
-    config  = function()
-      require('nvim-ts-autotag').setup()
-    end,
+  -- use 'alvan/vim-closetag'
+  use { 
+    'windwp/nvim-ts-autotag', 
+    requires = {'nvim-treesitter/nvim-treesitter'},
   }
+
 
   -- Typing
   use 'jiangmiao/auto-pairs'
