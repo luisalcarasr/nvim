@@ -52,12 +52,7 @@ return require('packer').startup(function(use)
   }
 
   -- Tags
-  -- use 'alvan/vim-closetag'
-  use { 
-    'windwp/nvim-ts-autotag', 
-    requires = {'nvim-treesitter/nvim-treesitter'},
-  }
-
+  use 'alvan/vim-closetag'
 
   -- Typing
   use 'jiangmiao/auto-pairs'
@@ -157,12 +152,6 @@ return require('packer').startup(function(use)
   -- Debugging
   use 'mfussenegger/nvim-dap'
   use 'Pocco81/DAPInstall.nvim'
-
-  -- MongoDB
-  use { 
-    'thibthib18/mongo-nvim', 
-    rocks = {'lua-mongo'},
-  }
 
   -- Markdown
   use { 

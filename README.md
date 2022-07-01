@@ -8,6 +8,7 @@
 - node >= 14.19.x
 - npm >= 8.4.x
 - xclip >= 0.13.x
+- ripgrep >= 13.0.x
 
 # Installation
 
