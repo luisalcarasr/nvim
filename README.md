@@ -12,22 +12,17 @@
 
 # Installation
 
-Create the `.config` folder if it does not exist and enter it.
-
-```sh
-cd ~/.config
-```
 
 Clone the project
 
 ```sh
-git clone https://github.com/luisalcarasr/nvim.git
+git clone https://github.com/luisalcarasr/nvimrc.git ~/.config/nvim
 ```
 
 Install TypeScript Language Servers (Autocomplete support)
 
 ```
-sudo npm i -g vscode-langservers-extracted typescript typescript-language-server eslint-language-server
+npm i -g vscode-langservers-extracted typescript typescript-language-server eslint-language-server
 ```
 
 Install the plugins
