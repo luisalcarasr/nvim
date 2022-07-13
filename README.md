@@ -1,7 +1,9 @@
 # NeoVim Configuration
+
+## Description
 🖋 My nvim configuration
 
-# Prerequisites
+## Prerequisites
 
 - nvim >= 0.7.x
 - git >= 2.35.x
@@ -11,7 +13,7 @@
 - ripgrep >= 13.0.x
 - yarn >= 1.22.x
 
-# Installation
+## Installation
 
 
 Clone the project
