@@ -5,21 +5,8 @@ if vim.fn.has("termguicolors") == 1 then
 end
 require('onedark').setup {
   style = 'darker',
-  toggle_style_key = '<leader>T',
+  toggle_style_key = '<leader>tt',
 }
 require('onedark').load()
 
 vim.cmd 'highlight Normal ctermbg=NONE'
-
-require("transparent").setup({
-  enable = false,
-  extra_groups = {
-    "BufferLineTabClose",
-    "BufferlineBufferSelected",
-    "BufferLineFill",
-    "BufferLineBackground",
-    "BufferLineSeparator",
-    "BufferLineIndicatorSelected",
-  },
-  exclude = {},
-})

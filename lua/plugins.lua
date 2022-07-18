@@ -15,34 +15,34 @@ require('packer').init({display = {auto_clean = false}})
 return require('packer').startup(function(use)
   -- Explorer
   use {
-    'kyazdani42/nvim-tree.lua',
+    'kyazdani42/nvim-tree.lua', -- File explorer
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      'kyazdani42/nvim-web-devicons', -- File icons
     },
   }
 
   -- Buffers
   use {
-    'akinsho/bufferline.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'},
+    'akinsho/bufferline.nvim', -- Tabs
+    requires = {'kyazdani42/nvim-web-devicons'}, -- File icons
   }
 
   -- Syntax
-  use 'ap/vim-css-color'
-  use 'luochen1990/rainbow'
-  use 'nvim-treesitter/nvim-treesitter'
+  use 'ap/vim-css-color' -- Color highlighter
+  use 'luochen1990/rainbow' -- Rainbow Parentheses
+  use 'nvim-treesitter/nvim-treesitter' -- Syntax highlighter
 
   -- Status Bar
   use {
     'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    requires = {'kyazdani42/nvim-web-devicons', opt = true} -- Icons
   }
 
   -- Clipboard History
   use {
-    'AckslD/nvim-neoclip.lua',
+    'AckslD/nvim-neoclip.lua', -- Clipboard history
     requires = {
-      'nvim-telescope/telescope.nvim',
+      'nvim-telescope/telescope.nvim', -- Extendable fuzzy finder
     },
     config = function()
       require('neoclip').setup()
@@ -50,11 +50,11 @@ return require('packer').startup(function(use)
   }
 
   -- Tags
-  use 'alvan/vim-closetag'
+  use 'alvan/vim-closetag' -- Autoclose HTML and XML tags
 
   -- Typing
-  use 'jiangmiao/auto-pairs'
-  use 'kamykn/spelunker.vim'
+  use 'jiangmiao/auto-pairs' -- Insert or delete brackets, parens, quotes in pair.
+  use 'kamykn/spelunker.vim' -- Spell checker
 
   -- Language Support Protocol
   use 'L3MON4D3/LuaSnip' -- Snippets engine
@@ -65,32 +65,32 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip' -- Snippets integration with CMP
 
   -- AI Assistant
-  use 'github/copilot.vim'
+  use 'github/copilot.vim' -- OpenAI Codex to suggest code
 
   -- Test
   use 'tyewang/vimux-jest-test'
   -- use 'janko-m/vim-test'
 
   -- Finding
-  use 'tpope/vim-surround'
+  use 'tpope/vim-surround' -- Mappings to easily delete, change and add.
   use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', -- Extendable fuzzy finder
+    requires = { {'nvim-lua/plenary.nvim'} } -- Lua extensions
   }
 
   -- IDE
-  use 'editorconfig/editorconfig-vim'
-  use 'terryma/vim-multiple-cursors'
-  use 'easymotion/vim-easymotion'
-  use 'yggdroot/indentline'
-  use 'scrooloose/nerdcommenter'
-  use 'adelarsq/vim-matchit'
-  use 'AndrewRadev/tagalong.vim'
+  use 'editorconfig/editorconfig-vim' -- EditorConfig helps maintain consistent coding styles.
+  use 'terryma/vim-multiple-cursors' -- Multiple selection
+  use 'easymotion/vim-easymotion' -- Simpler way to use some motions
+  use 'yggdroot/indentline' -- Vertical lines at each indentation level.
+  use 'scrooloose/nerdcommenter' -- Shortcuts for comments
+  use 'adelarsq/vim-matchit' -- Extend matching for the % operator
+  use 'AndrewRadev/tagalong.vim' -- Automatically rename closing HTML/XML
 
   -- TO-DO
   use {
-  "folke/todo-comments.nvim",
-  requires = "nvim-lua/plenary.nvim",
+  'folke/todo-comments.nvim', -- Highlight and search for todo comments
+  requires = 'nvim-lua/plenary.nvim', -- Lua extensions
   config = function()
     require("todo-comments").setup {
       highlight = {
@@ -105,44 +105,35 @@ return require('packer').startup(function(use)
 
   -- Prettier
   use {
-    'mhartington/formatter.nvim',
+    'mhartington/formatter.nvim', -- Code formatter
     config = function() require('formatter').setup {} end
   }
 
   -- Tmux
-  use 'christoomey/vim-tmux-navigator'
+  use 'christoomey/vim-tmux-navigator' -- Navigate seamlessly between vim and tmux splits
 
   -- HTTP Client
-  use 'nicwest/vim-http'
-
-  -- Sessions
-  -- use 'xolox/vim-misc'
-  -- use 'xolox/vim-session'
+  use 'nicwest/vim-http' -- Wrapper over curl and http syntax highlighting.
 
   -- Git
-  use 'kdheepak/lazygit.nvim'
-  use 'tpope/vim-fugitive' -- Git integration
+  use 'kdheepak/lazygit.nvim' -- Git Terminal User Interface
+  use 'APZelos/blamer.nvim' -- Show author in line
   use {
-    'lewis6991/gitsigns.nvim',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    },
+    'lewis6991/gitsigns.nvim', -- Git decorations
+    requires = { 'nvim-lua/plenary.nvim' }, -- Lua extensions
     config = function()
       require('gitsigns').setup {
         sign_priority = 9,
       }
     end
   }
-  use 'APZelos/blamer.nvim' -- Show author of the line
-  -- use 'mhinz/vim-signify'
 
   -- Themes
-  use 'xiyaowong/nvim-transparent'
-  use 'navarasu/onedark.nvim'
+  use 'navarasu/onedark.nvim' -- My favorite theme
 
   -- ZenMode
   use {
-    "folke/zen-mode.nvim",
+    "folke/zen-mode.nvim", -- Hide everything except the current file
     config = function()
       require("zen-mode").setup {}
     end
@@ -154,15 +145,15 @@ return require('packer').startup(function(use)
 
   -- Markdown
   use { 
-    'iamcco/markdown-preview.nvim',
+    'iamcco/markdown-preview.nvim', -- Markdown preview in browser
     ft = 'markdown',
     run = 'cd app && yarn install'
   }
   use {
-    'preservim/vim-markdown',
+    'preservim/vim-markdown', -- Markdown syntax highlighting
     requires = { 'godlygeek/tabular' }
   }
 
   -- Sudo
-  use 'lambdalisue/suda.vim'
+  use 'lambdalisue/suda.vim' -- Read or write files with sudo
 end)
