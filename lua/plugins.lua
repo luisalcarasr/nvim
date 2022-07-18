@@ -15,10 +15,10 @@ require('packer').init({display = {auto_clean = false}})
 return require('packer').startup(function(use)
   -- Explorer
   use {
-      'kyazdani42/nvim-tree.lua',
-      requires = {
-        'kyazdani42/nvim-web-devicons', -- optional, for file icon
-      },
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
   }
 
   -- Buffers
