@@ -28,7 +28,6 @@ return require('packer').startup(function(use)
   }
 
   -- Syntax
-  use 'sheerun/vim-polyglot'
   use 'ap/vim-css-color'
   use 'luochen1990/rainbow'
   use 'nvim-treesitter/nvim-treesitter'
