@@ -39,7 +39,6 @@ return require('packer').startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
-
   -- Clipboard History
   use {
     'AckslD/nvim-neoclip.lua',
@@ -122,6 +121,7 @@ return require('packer').startup(function(use)
   -- use 'xolox/vim-session'
 
   -- Git
+  use 'kdheepak/lazygit.nvim'
   use 'tpope/vim-fugitive' -- Git integration
   use {
     'lewis6991/gitsigns.nvim',
