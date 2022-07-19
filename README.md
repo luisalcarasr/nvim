@@ -12,6 +12,7 @@
 - xclip >= 0.13.x
 - ripgrep >= 13.0.x
 - yarn >= 1.22.x
+- lua-language-server >= 3.4.x
 
 ## Installation
 
