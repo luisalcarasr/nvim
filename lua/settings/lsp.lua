@@ -107,3 +107,4 @@ require('lspconfig')['eslint'].setup {
   root_dir = lspconfig.util.root_pattern('.git');
 }
 
+require('lspconfig')['pyright'].setup {}

@@ -25,7 +25,7 @@ git clone https://github.com/luisalcarasr/nvimrc.git ~/.config/nvim
 Install TypeScript Language Servers (Autocomplete support)
 
 ```
-npm i -g yarn vscode-langservers-extracted typescript typescript-language-server eslint-language-server
+npm i -g yarn vscode-langservers-extracted typescript-language-server pyright
 ```
 
 Install the plugins
