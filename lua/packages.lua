@@ -1,4 +1,4 @@
-return function(use)
+require('packer').startup(function(use)
   -- Explorer
   use {
     'kyazdani42/nvim-tree.lua', -- File explorer
@@ -75,19 +75,19 @@ return function(use)
 
   -- TO-DO
   use {
-  'folke/todo-comments.nvim', -- Highlight and search for todo comments
-  requires = 'nvim-lua/plenary.nvim', -- Lua extensions
-  config = function()
-    require("todo-comments").setup {
-      highlight = {
-        before = "",
-        keyword = "fg",
-        after = "",
-        comments_only = true,
-      },
-    }
-  end
-}
+    'folke/todo-comments.nvim', -- Highlight and search for todo comments
+    requires = 'nvim-lua/plenary.nvim', -- Lua extensions
+    config = function()
+      require("todo-comments").setup {
+        highlight = {
+          before = "",
+          keyword = "fg",
+          after = "",
+          comments_only = true,
+        },
+      }
+    end
+  }
 
   -- Prettier
   use {
@@ -142,4 +142,4 @@ return function(use)
 
   -- Sudo
   use 'lambdalisue/suda.vim' -- Read or write files with sudo
-end
+end)
