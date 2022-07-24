@@ -1,18 +1,4 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
-
-local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
-
-if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
-  execute 'packadd packer.nvim'
-end
-
-vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
-
-require('packer').init({display = {auto_clean = false}})
-
-return require('packer').startup(function(use)
+return function(use)
   -- Explorer
   use {
     'kyazdani42/nvim-tree.lua', -- File explorer
@@ -144,7 +130,7 @@ return require('packer').startup(function(use)
   use 'Pocco81/DAPInstall.nvim'
 
   -- Markdown
-  use { 
+  use {
     'iamcco/markdown-preview.nvim', -- Markdown preview in browser
     ft = 'markdown',
     run = 'cd app && yarn install'
@@ -156,4 +142,4 @@ return require('packer').startup(function(use)
 
   -- Sudo
   use 'lambdalisue/suda.vim' -- Read or write files with sudo
-end)
+end
