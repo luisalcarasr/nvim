@@ -4,7 +4,7 @@ require('bufferline').setup {
       {
         filetype = "NvimTree",
         text = function()
-          project_name = ""
+          local project_name = ''
           for dir in string.gmatch(vim.fn.getcwd(), "([^/]+)") do
             project_name = dir
           end

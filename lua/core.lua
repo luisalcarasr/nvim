@@ -9,8 +9,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   run 'packadd packer.nvim'
 end
 
-vim.cmd 'autocmd BufWritePost packages.lua PackerSync' -- Auto compile when there are changes in plugins.lua
-vim.cmd 'autocmd BufWritePost packages.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
+vim.cmd 'autocmd BufWritePost packages.lua PackerSync'
 
 local packages = require('packages')
 
