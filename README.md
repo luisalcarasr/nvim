@@ -13,6 +13,7 @@
 - ripgrep >= 13.0.x
 - yarn >= 1.22.x
 - lua-language-server >= 3.4.x
+- rust-analyzer >= 2022-07-17
 
 ## Installation
 
