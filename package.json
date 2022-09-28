@@ -1,0 +1,28 @@
+{
+  "name": "nvimrc",
+  "version": "1.0.0",
+  "description": "Neovim configuration",
+  "main": "init.lua",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisalcarasr/nvimrc.git"
+  },
+  "keywords": [
+    "vim",
+    "neovim",
+    "lua"
+  ],
+  "author": "Luis Adrian Alcaras Rubalcava",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/luisalcarasr/nvimrc/issues"
+  },
+  "homepage": "https://github.com/luisalcarasr/nvimrc#readme",
+  "dependencies": {
+    "pyright": "^1.1.273",
+    "typescript-language-server": "^1.2.0",
+    "vscode-langservers-extracted": "^4.4.0",
+    "yarn": "^1.22.19"
+  }
+}
