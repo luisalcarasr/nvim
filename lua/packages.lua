@@ -50,6 +50,9 @@ require('packer').startup(function(use)
   use 'onsails/lspkind-nvim' -- Icons for autocompletion menu
   use 'saadparwaiz1/cmp_luasnip' -- Snippets integration with CMP
 
+  -- Picker
+  use {'nvim-telescope/telescope-ui-select.nvim' }
+
   -- AI Assistant
   use 'github/copilot.vim' -- OpenAI Codex to suggest code
 

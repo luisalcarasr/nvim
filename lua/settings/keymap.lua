@@ -32,7 +32,8 @@ vim.api.nvim_set_keymap('n', '<leader>ch', ':Telescope neoclip plus initial_mode
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gy', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gi', ':Telescope lsp_implementation initial_mode=normal<CR>', {noremap = false, silent = true});
-vim.api.nvim_set_keymap('n', 'gf', ':Telescope lsp_code_actions initial_mode=normal<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', 'gn', '<cmd>lua vim.lsp.buf.rename()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gr', ':Telescope lsp_references initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = false, silent = true});
 

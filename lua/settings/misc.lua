@@ -92,3 +92,6 @@ require("luasnip.loaders.from_snipmate").load()
 
 -- Sudo
 vim.g.suda_smart_edit = 1
+
+-- Picker
+require("telescope").load_extension("ui-select")
