@@ -33,9 +33,12 @@ vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {nor
 vim.api.nvim_set_keymap('n', 'gy', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gi', ':Telescope lsp_implementation initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', '<C-.>', '<cmd>lua vim.lsp.buf.code_action()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gn', '<cmd>lua vim.lsp.buf.rename()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gr', ':Telescope lsp_references initial_mode=normal<CR>', {noremap = false, silent = true});
 vim.api.nvim_set_keymap('n', 'gh', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = false, silent = true});
+vim.api.nvim_set_keymap('n', '<leader>o', '<cmd>lua vim.lsp.buf.execute_command({ command = "_typescript.organizeImports", arguments = {vim.fn.expand("%:p")} })<CR>', {noremap = false, silent = true});
 
 -- Buffers
 vim.api.nvim_set_keymap('n', '<leader>bb', ':Telescope buffers initial_mode=normal<cr>', {noremap = true, silent = true});
