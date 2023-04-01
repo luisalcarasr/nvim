@@ -1,6 +1,6 @@
 local configuration = require('lspconfig')
 
-configuration.sumneko_lua.setup {
+configuration.lua_ls.setup {
   settings = {
     Lua = {
       runtime = {
