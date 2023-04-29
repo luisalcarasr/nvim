@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/luisalcarasr/nvimrc#readme",
   "dependencies": {
+    "@johnnymorganz/stylua-bin": "^0.17.1",
     "eslint": "^8.32.0",
     "pyright": "^1.1.273",
     "typescript-language-server": "^1.2.0",

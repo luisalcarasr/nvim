@@ -1,5 +1,3 @@
-local configuration = require('lspconfig')
+local configuration = require("lspconfig")
 
-configuration.pyright.setup {
-
-}
+configuration.pyright.setup({})

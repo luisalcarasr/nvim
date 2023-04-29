@@ -1,3 +1,3 @@
-local configuration = require('lspconfig')
+local configuration = require("lspconfig")
 
-configuration.rust_analyzer.setup { }
+configuration.rust_analyzer.setup({})

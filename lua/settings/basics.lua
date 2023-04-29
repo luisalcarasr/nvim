@@ -7,14 +7,14 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.cursorline = true
-vim.opt.clipboard = vim.opt.clipboard + 'unnamedplus'
+vim.opt.clipboard = vim.opt.clipboard + "unnamedplus"
 vim.opt.number = true
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 vim.opt.numberwidth = 1
 vim.opt.showcmd = true
 vim.opt.ruler = true
 vim.opt.cursorline = true
-vim.opt.encoding='utf-8'
+vim.opt.encoding = "utf-8"
 vim.opt.showmatch = true
 vim.opt.relativenumber = true
 vim.opt.laststatus = 2
@@ -24,14 +24,14 @@ vim.opt.ignorecase = true
 vim.opt.hidden = true
 vim.opt.cmdheight = 1
 vim.opt.updatetime = 300
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 vim.opt.splitright = true
 
-vim.cmd 'set nocompatible'
-vim.cmd 'set t_Co=256'
-vim.cmd 'set nobackup'
-vim.cmd 'set nowritebackup'
-vim.cmd 'set noerrorbells visualbell'
-vim.cmd 'set noshowmode'
-vim.cmd 'set diffopt+=vertical'
-vim.cmd 'set shortmess+=c'
+vim.cmd("set nocompatible")
+vim.cmd("set t_Co=256")
+vim.cmd("set nobackup")
+vim.cmd("set nowritebackup")
+vim.cmd("set noerrorbells visualbell")
+vim.cmd("set noshowmode")
+vim.cmd("set diffopt+=vertical")
+vim.cmd("set shortmess+=c")

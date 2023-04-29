@@ -1,2 +1,2 @@
-require 'core'
-require 'settings'
+require("core")
+require("settings")
