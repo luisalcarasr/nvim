@@ -6,6 +6,7 @@ return {
       { "kevinhwang91/nvim-hlslens", opts = {} },
     },
     opts = {
+      hide_if_all_visible = true,
       handlers = {
         gitsigns = true,
       },
