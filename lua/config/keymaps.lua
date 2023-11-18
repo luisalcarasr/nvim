@@ -8,6 +8,7 @@ local groups = require("which-key")
 groups.register({
   ["<leader>"] = {
     t = { name = "terminal" }, -- Terminal
+    h = { name = "clipboard history" }, -- Clipboard History
   },
 })
 
@@ -20,3 +21,12 @@ key.set("t", "<c-t>", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal", silent 
 key.set("n", "<c-t>", function()
   vim.cmd(vim.v.count .. "ToggleTerm")
 end, { desc = "Toggle terminal", silent = true, noremap = true })
+
+-- Clipboard History
+
+key.set(
+  "n",
+  "<leader>hc",
+  "<cmd>Telescope neoclip initial_mode=normal<cr>",
+  { desc = "Clipboard history", silent = true, noremap = true }
+)
